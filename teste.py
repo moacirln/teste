@@ -7,7 +7,7 @@ import pandas as pd
 def connect_BD():
     executable_path = sys.executable
     base_path = os.path.dirname(executable_path)
-    db_path = os.path.join(base_path, 'banco_dados.db')
+    db_path = os.path.join('banco_dados.db')
     banco = sqlite3.connect(db_path)
     return banco
 
